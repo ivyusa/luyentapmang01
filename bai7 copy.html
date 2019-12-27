@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [5,6,7,8,9,10,11,12,13,14];
+      let find = +prompt("Nhập phần tử số nguyên V");
+      let result = [];
+      let flag=false;
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === find) {
+          flag = true;
+          arr.splice(i,1);
+          break;
+          
+        } else {
+           flag= false;
+          
+        } 
+      }
+
+      if(flag){
+      document.write("V thuộc mảng đã cho" + "</br>");
+      }
+      else {
+      document.write("V không thuộc mảng đã cho");
+    
+    }
+    
+    document.write("Giá trị mảng mới là" + arr);
+    </script>
+  </body>
+</html>
